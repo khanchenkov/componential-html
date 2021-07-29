@@ -1,0 +1,36 @@
+section
+    width: 1200px
+    height: 400px
+    margin: 10% auto
+    background-image: url(../../img/componential_html.png)
+    background-repeat: no-repeat
+    background-position: center center
+    position: relative
+
+.logo
+    position: absolute
+    top: 0
+    right: 0
+
+#center, #right, #left, #dot 
+    transition: all 1s ease
+
+
+#center 
+    opacity: 0
+
+#left 
+    transform: translateX(14.43px)
+
+#right, #dot 
+    transform: translateX(-14.43px)
+
+
+#logo:hover #right, #logo:hover #dot 
+    transform: translateX(0px)
+
+#logo:hover #left 
+    transform: translateX(0px)
+
+#logo:hover #center 
+    opacity: 1
